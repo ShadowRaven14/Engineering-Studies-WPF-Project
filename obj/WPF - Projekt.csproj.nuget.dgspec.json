@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\xXxF0RR35T_C4MPxXx\\Desktop\\xd2\\WPF-Projekt\\WPF - Projekt\\WPF - Projekt.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\xXxF0RR35T_C4MPxXx\\Desktop\\xd2\\WPF-Projekt\\WPF - Projekt\\WPF - Projekt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xXxF0RR35T_C4MPxXx\\Desktop\\xd2\\WPF-Projekt\\WPF - Projekt\\WPF - Projekt.csproj",
+        "projectName": "WPF - Projekt",
+        "projectPath": "C:\\Users\\xXxF0RR35T_C4MPxXx\\Desktop\\xd2\\WPF-Projekt\\WPF - Projekt\\WPF - Projekt.csproj",
+        "packagesPath": "C:\\Users\\xXxF0RR35T_C4MPxXx\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xXxF0RR35T_C4MPxXx\\Desktop\\xd2\\WPF-Projekt\\WPF - Projekt\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\xXxF0RR35T_C4MPxXx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.Toolkit.Wpf.UI.Controls": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            },
+            "Microsoft.VCRTForwarders.140": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "Microsoft.VCRTForwarders.140": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            }
+          },
+          "imports": [
+            "uap10.0.18362",
+            "uap10.0.18362"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

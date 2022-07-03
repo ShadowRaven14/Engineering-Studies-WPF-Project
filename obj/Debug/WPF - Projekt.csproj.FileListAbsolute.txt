@@ -1,0 +1,208 @@
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\WPF - Projekt.exe.config
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.csprojAssemblyReference.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\MainWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\MapWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\NewPerson.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\PrintPreview.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\views+controllers\NewClient.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\views+controllers\NewCourier.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\views+controllers\NewOrder.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\App.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.lref
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\MainWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\MapWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\NewPerson.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\PrintPreview.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\views+controllers\NewClient.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\views+controllers\NewCourier.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\views+controllers\NewOrder.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.g.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF___Projekt.Properties.Resources.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.GenerateResource.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CoreCompileInputs.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CopyComplete
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Source\Repos\WPF - Projekt\obj\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csprojAssemblyReference.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\MapWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\MainWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\MapWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\NewPerson.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\PrintPreview.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewClient.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewCourier.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewOrder.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\App.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.lref
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\WPF - Projekt.exe.config
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\MainWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\NewPerson.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\PrintPreview.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewClient.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewCourier.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewOrder.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.g.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF___Projekt.Properties.Resources.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.GenerateResource.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CoreCompileInputs.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CopyComplete
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\WPF - Projekt.exe.config
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.csprojAssemblyReference.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\MainWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\MapWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\NewPerson.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\PrintPreview.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\views+controllers\NewClient.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\views+controllers\NewCourier.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\views+controllers\NewOrder.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\App.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.lref
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\MainWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\MapWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\NewPerson.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\PrintPreview.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\views+controllers\NewClient.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\views+controllers\NewCourier.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\views+controllers\NewOrder.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.g.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF___Projekt.Properties.Resources.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.GenerateResource.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CoreCompileInputs.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CopyComplete
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd\WPF - Projekt 20-06-22 18-16\WPF - Projekt\obj\Debug\WPF - Projekt.pdb
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\WPF - Projekt.exe.config
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\WPF - Projekt.exe
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\WPF - Projekt.pdb
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.dll
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.pdb
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.pdb
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.dll
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.pdb
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.xml
+C:\Users\Admin\Desktop\WPF - Projekt\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\MapWindow.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\NewPerson.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\PrintPreview.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewClient.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewCourier.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewOrder.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.cache
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.lref
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\MapWindow.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\NewPerson.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\PrintPreview.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewClient.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewCourier.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\views+controllers\NewOrder.baml
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.g.resources
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF___Projekt.Properties.Resources.resources
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CopyComplete
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.exe
+C:\Users\Admin\Desktop\WPF - Projekt\obj\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\WPF - Projekt.exe.config
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\WPF - Projekt.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.Controls.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Wpf.UI.XamlHost.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.pdb
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\BingMapsRESTToolkit.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.csprojAssemblyReference.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\MainWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\MapWindow.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\NewPerson.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\PrintPreview.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\views+controllers\NewClient.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\views+controllers\NewCourier.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\views+controllers\NewOrder.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\App.g.cs
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt_MarkupCompile.lref
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\MainWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\MapWindow.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\NewPerson.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\PrintPreview.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\views+controllers\NewClient.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\views+controllers\NewCourier.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\views+controllers\NewOrder.baml
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.g.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF___Projekt.Properties.Resources.resources
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.GenerateResource.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CoreCompileInputs.cache
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.csproj.CopyComplete
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.exe
+C:\Users\xXxF0RR35T_C4MPxXx\Desktop\xd2\WPF-Projekt\WPF - Projekt\obj\Debug\WPF - Projekt.pdb

@@ -1,0 +1,556 @@
+﻿<Window x:Class="WPF___Projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF___Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1550"
+        Loaded="Window_Loaded">
+    <DockPanel >
+        <TextBlock DockPanel.Dock="Top" Text="{Binding ElementName=tabControl, Path=SelectedItem.Tag}"
+                   Padding="10 5" Background="DarkGreen" Foreground="White" TextWrapping="Wrap"/>
+
+        <TabControl Margin="4" TabStripPlacement="Bottom" Name="tabControl" >
+
+            <!--ORDER-->
+            <TabItem Header="Zamówienia" Tag="Tutaj możesz dodawać nowe zamówienia">
+                <Grid>
+                    <Grid HorizontalAlignment="Left" Height="377" Margin="10,0,0,0" VerticalAlignment="Center" Width="130">
+                        <Button Name="AddOrderButton" Content="Dodaj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="AddOrderClick"/>
+                        <Button Name="EditOrderButton" Content="Edytuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="EditOrderClick"/>
+                        <Button Name="DeleteOrderButton" Content="Usuń" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="DeleteOrderClick"/>
+                        <Button Name="ViewOrderButton" Content="Podejrzyj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="ViewOrderClick"/>
+                        <Button Name="PrintOrderButton" Content="Drukuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="PrintOrderClick"/>
+                        <Button Name="MapOrderButton" Content="Mapa" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="MapOrderClick"/>
+                    </Grid>
+
+
+                    <Grid HorizontalAlignment="Left" Height="487" Margin="161,0,0,0" VerticalAlignment="Center" Width="319">
+                        <ListBox Name="listOfOrders" SelectionMode="Single" GotFocus="OrderGotFocus" Margin="0,10,0,10" DisplayMemberPath="NameAndPrice"/>
+                    </Grid>
+
+
+                    <Grid DataContext="{Binding ElementName=listOfOrders, Path=SelectedItem}" HorizontalAlignment="Left" Height="487" Margin="526,0,0,0" VerticalAlignment="Center" Width="586">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!--PODSTAWOWE-->
+                            <Label Name="Order_NameSurname" Grid.Column="0" Grid.Row="0" Content="Nazwa przesyłki" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="Order_txtNameSurname" Text="{Binding Path=NameSurname}" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Margin="3"/>
+                            <Button Name="Order_btnNameSurname" Grid.Column="2" Grid.Row="0" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Order_CourierID" Grid.Column="0" Grid.Row="1" Content="Kurier" VerticalAlignment="Center" Margin="3"/>
+                            <ComboBox Name="Order_txtCourierID" Text="{Binding Path=CourierID}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="3"/>
+                            <Button Name="Order_btnCourierID" Grid.Column="2" Grid.Row="1" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Order_ClientID" Grid.Column="0" Grid.Row="2" Content="Klient" VerticalAlignment="Center" Margin="3"/>
+                            <ComboBox Name="Order_txtClientID" Text="{Binding Path=ClientID}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="3" SelectionChanged="Order_clientChange"/>
+                            <Button Name="Order_btnClientID" Grid.Column="2" Grid.Row="2" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Order_Payment" Content="Wpłata" Grid.Column="0" Grid.Row="3"  VerticalAlignment="Center" Margin="3"/>
+                            <ScrollBar Name="Order_scrollbarPayment" Value="{Binding Path=Payment}" Grid.Column="1" Grid.Row="3" Orientation="Horizontal" ValueChanged="Order_scrollbarPayment_ValueChanged" />
+                            <TextBox Name="Order_txtPayment" Grid.Column="2" Grid.Row="3"  VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Order_ArriveWhen" Content="Realizacja"  Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                            <ComboBox Name="Order_cmbArriveWhen" SelectedIndex="{Binding Path=PackageStatus}" Grid.Column="1" Grid.Row="4"
+                                      VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="2,7,4,6.667">
+                                <ComboBoxItem Name="arr1" Content="Nie śpiesz się" Margin="3"/>
+                                <ComboBoxItem Name="arr2" Content="Standard" Margin="3"/>
+                                <ComboBoxItem Name="arr3" Content="Ekspres" Margin="3"/>
+                            </ComboBox>
+
+                            <Label Name="Order_PackageStatus" Content="Status paczki"  Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                            <ComboBox Name="Order_cmbPackageStatus" SelectedIndex="{Binding Path=PackageStatus}" Grid.Column="1" Grid.Row="5" 
+                                      VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="2,7,4,6.667" Background="DarkBlue">
+                                <ComboBoxItem Name="status1" Content="Oczekująca" Margin="3"/>
+                                <ComboBoxItem Name="status2" Content="Opłacona" Margin="3"/>
+                                <ComboBoxItem Name="status3" Content="W drodze" Margin="3"/>
+                                <ComboBoxItem Name="status4" Content="Dostarczona" Margin="3"/>
+                            </ComboBox>
+
+                            <GroupBox Name="Order_Format" Header="Adres" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" Margin="3">
+                                <Grid VerticalAlignment="Center">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Name="Order_Street" Content="Miasto" Grid.Column="0" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+                                    <Label Name="Order_City" Content="Ulica" Grid.Row="1" Grid.Column="0" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+                                    <Label Name="Order_Code" Content="Kod" Grid.Column="2" Grid.Row="2" Margin="3,0,4,0" VerticalAlignment="Center" Height="26"/>
+                                    <Label Name="Order_Phone" Content="Telefon" Grid.Column="4" Grid.Row="2" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+
+                                    <TextBox Name="Order_txtCity" Text="{Binding Path=City}" Grid.Column="2" Margin="3,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="10"/>
+                                    <TextBox Name="Order_txtStreet" Text="{Binding Path=Street}" Grid.Column="2" Grid.Row="1" Margin="3,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="10"/>
+                                    <TextBox Name="Order_txtCode" Text="{Binding Path=Code}" Grid.Column="3" Grid.Row="2" Margin="0,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="1"/>
+                                    <TextBox Name="Order_txtPhone"  Text="{Binding Path=Phone}" Grid.Column="5" Grid.Row="2" Margin="0,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="2"/>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+
+
+                        
+
+
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Dodatkowe uwagi:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"  Height="28" Margin="3,0,3,0"/>
+                            <Button Name ="btnOrderSummary" Content="Sprawdź" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" IsDefault="True"  Margin="3,0,3,0" Click="Order_btnSummary_Click"/>
+                        </Grid>
+
+
+                        <TextBox Name="txtOrderSummary" Text="{Binding Path=Description}" Grid.Column="0" Grid.Row="4" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="10,5,3,3"/>
+
+                        <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Button Name="btnOrderOk" Content="Dodaj nową osobę" Padding="20,3" Margin="3" IsDefault="True" Click="Order_btnOkay_Click"/>
+                            <Button Name="btnOrderCancel" Content="Anuluj" Padding="20,3" Margin="3" IsCancel="True" Click="Order_btnCancel_Click"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+               
+            </TabItem>
+
+
+
+            <!--COURIER-->
+            <TabItem Header="Kurierzy" Tag="Tutaj możesz dodawać nowych kurierów">
+                <Grid>
+                    <Grid HorizontalAlignment="Left" Height="377" Margin="10,0,0,0" VerticalAlignment="Center" Width="130">
+                        <Button Name="AddCourierButton" Content="Dodaj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="AddCourierClick"/>
+                        <Button Name="EditCourierButton" Content="Edytuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="EditCourierClick"/>
+                        <Button Name="DeleteCourierButton" Content="Usuń" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="DeleteCourierClick"/>
+                        <Button Name="ViewCourierButton" Content="Podejrzyj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="ViewCourierClick"/>
+                        <Button Name="PrintCourierButton" Content="Drukuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="PrintCourierClick"/>
+                        <Button Name="MapCourierButton" Content="Mapa" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="ViewCourierClick"/>
+                    </Grid>
+
+
+                    <Grid HorizontalAlignment="Left" Height="487" Margin="161,0,0,0" VerticalAlignment="Center" Width="319">
+                        <ListBox Name="listOfCouriers" SelectionMode="Single" GotFocus="CourierGotFocus" Margin="0,10,0,10" DisplayMemberPath="NameAndPrice"/>
+                    </Grid>
+
+
+                    <Grid DataContext="{Binding ElementName=listOfCouriers, Path=SelectedItem}" HorizontalAlignment="Left" Height="487" Margin="526,0,0,0" VerticalAlignment="Center" Width="586">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!--PODSTAWOWE-->
+                            <Label Name="Courier_NameSurname" Grid.Column="0" Grid.Row="0" Content="Imię i Nazwisko" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="Courier_txtNameSurname" Text="{Binding Path=NameSurname}" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Margin="3" TextChanged="Courier_txtData_TextChanged"/>
+                            <Button Name="Courier_btnNameSurname" Grid.Column="2" Grid.Row="0" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Courier_Email" Grid.Column="0" Grid.Row="1" Content="Email" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="Courier_txtEmail" Text="{Binding Path=Email}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="3" TextChanged="Courier_txtData_TextChanged"/>
+                            <Button Name="Courier_btnEmail" Grid.Column="2" Grid.Row="1" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Courier_Phone" Grid.Column="0" Grid.Row="2" Content="Telefon" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="Courier_txtPhone" Text="{Binding Path=Phone}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="3" TextChanged="Courier_txtData_TextChanged"/>
+                            <Button Name="Courier_btnPhone" Grid.Column="2" Grid.Row="2" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+                        </Grid>
+
+
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Dodatkowe informacje:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"  Height="28" Margin="3,0,3,0"/>
+                            <Button Name ="btnCourierSummary" Content="Sprawdź" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" IsDefault="True"  Margin="3,0,3,0" Click="Courier_btnSummary_Click"/>
+                        </Grid>
+
+
+                        <TextBox Name="txtCourierSummary" Text="{Binding Path=Description}" Grid.Column="0" Grid.Row="4" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="10,5,3,3"/>
+
+                        <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Button Name="btnCourierOk" Content="Dodaj nową osobę" Padding="20,3" Margin="3" IsDefault="True" Click="Courier_btnOkay_Click"/>
+                            <Button Name="btnCourierCancel" Content="Anuluj" Padding="20,3" Margin="3" IsCancel="True" Click="Courier_btnCancel_Click"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+
+            <!--CLIENT-->
+            <TabItem Header="Klienci" Tag="Tutaj możesz dodawać nowych klientów" Margin="-2,0">
+                <Grid>
+                    <Grid HorizontalAlignment="Left" Height="377" Margin="10,0,0,0" VerticalAlignment="Center" Width="130">
+                        <Button Name="AddClientButton" Content="Dodaj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="AddClientClick"/>
+                        <Button Name="EditClientButton" Content="Edytuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="EditClientClick"/>
+                        <Button Name="DeleteClientButton" Content="Usuń" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="DeleteClientClick"/>
+                        <Button Name="ViewClientButton" Content="Podejrzyj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="ViewClientClick"/>
+                        <Button Name="PrintClientButton" Content="Drukuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="PrintClientClick"/>
+                        <Button Name="MapClientButton" Content="Mapa" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="MapClientClick"/>
+                    </Grid>
+
+
+                    <Grid HorizontalAlignment="Left" Height="487" Margin="161,0,0,0" VerticalAlignment="Center" Width="319">
+                        <ListBox Name="listOfClients" SelectionMode="Single" GotFocus="ClientGotFocus" Margin="0,10,0,10" DisplayMemberPath="NameAndPrice"/>
+                    </Grid>
+
+
+                    <Grid DataContext="{Binding ElementName=listOfClients, Path=SelectedItem}" HorizontalAlignment="Left" Height="487" Margin="526,0,0,0" VerticalAlignment="Center" Width="586">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Name="Client_NameSurname" Grid.Column="0" Grid.Row="0" Content="Imię i Nazwisko" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="Client_txtNameSurname" Text="{Binding Path=NameSurname}" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Margin="3" TextChanged="Client_txtNameSurname_TextChanged"/>
+                            <Button Name="Client_btnNameSurname" Grid.Column="2" Grid.Row="0" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Client_Gender" Content="Płeć"  Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                            <ComboBox Name="Client_cmbGender" SelectedIndex="{Binding Path=Gender}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="2,7,4,6.667">
+                                <ComboBoxItem Name="Client_male" Content="Mężczyzna" Margin="3"/>
+                                <ComboBoxItem Name="Client_female" Content="Kobieta" Margin="3"/>
+                                <ComboBoxItem Name="Client_unknown" Content="Nieznane" Margin="3"/>
+                            </ComboBox>
+
+                            <Label Name="Client_Date" Content="Data urodzenia" Grid.Column="0" Grid.Row="3"  VerticalAlignment="Center" Margin="3"/>
+                            <DatePicker Name="Client_datepick" SelectedDateChanged="dateChangeHandler" SelectedDate="{Binding Path=DATEDateOfBirth}" 
+                                        Grid.Column="1" Grid.Row="3" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+                            
+
+                            <Label Name="Client_Province" Content="Województwo"  Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                            <ComboBox Name="Client_cmbProvince" SelectedIndex="{Binding Path=Province}" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="2,7,4,6.667">
+                                <ComboBoxItem Name="cmbClient1" Content="Podlaskie"/>
+                                <ComboBoxItem Name="cmbClient2" Content="Dolnośląskie"/>
+                                <ComboBoxItem Name="cmbClient3" Content="Kujawsko-pomorskie"/>
+                                <ComboBoxItem Name="cmbClient4" Content="Lubelskie"/>
+                                <ComboBoxItem Name="cmbClient5" Content="Lubuskie"/>
+                                <ComboBoxItem Name="cmbClient6" Content="Łódzkie"/>
+                                <ComboBoxItem Name="cmbClient7" Content="Mazowieckie"/>
+                                <ComboBoxItem Name="cmbClient8" Content="Małopolskie"/>
+                                <ComboBoxItem Name="cmbClient9" Content="Opolskie"/>
+                                <ComboBoxItem Name="cmbClient10" Content="Podkarpackie"/>
+                                <ComboBoxItem Name="cmbClient11" Content="Pomorskie"/>
+                                <ComboBoxItem Name="cmbClient12" Content="Śląskie"/>
+                                <ComboBoxItem Name="cmbClient13" Content="Świętokrzyskie"/>
+                                <ComboBoxItem Name="cmbClient14" Content="Warmińsko-mazurskie"/>
+                                <ComboBoxItem Name="cmbClient15" Content="Wielkopolskie"/>
+                                <ComboBoxItem Name="cmbClient16" Content="Zachodnio-pomorskie"/>
+                            </ComboBox>
+
+                            <Label Name="Client_Email" Grid.Column="0" Grid.Row="5" Content="Email" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="Client_txtEmail" Text="{Binding Path=Email}" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Margin="3" TextChanged="emailChangeHandler"/>
+                            <Button Name="Client_btnEmail" Grid.Column="2" Grid.Row="5" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+
+                            <GroupBox Name="Client_Format" Header="Adres" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" Margin="3">
+                                <Grid VerticalAlignment="Center">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Name="Client_Street" Content="Miasto" Grid.Column="0" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+                                    <Label Name="Client_City" Content="Ulica" Grid.Row="1" Grid.Column="0" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+                                    <Label Name="Client_Code" Content="Kod" Grid.Column="2" Grid.Row="2" Margin="3,0,4,0" VerticalAlignment="Center" Height="26"/>
+                                    <Label Name="Client_Phone" Content="Telefon" Grid.Column="4" Grid.Row="2" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+
+                                    <TextBox Name="Client_txtCity" Text="{Binding Path=City}" Grid.Column="2" Margin="3,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="10"/>
+                                    <TextBox Name="Client_txtStreet" Text="{Binding Path=Street}" Grid.Column="2" Grid.Row="1" Margin="3,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="10"/>
+                                    <TextBox Name="Client_txtCode" Text="{Binding Path=Code}" Grid.Column="3" Grid.Row="2" Margin="0,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="1"/>
+                                    <TextBox Name="Client_txtPhone"  Text="{Binding Path=Phone}" Grid.Column="5" Grid.Row="2" Margin="0,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="2"/>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+
+
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+
+
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Dodatkowe informacje:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"  Height="28" Margin="3,0,3,0"/>
+                            <Button Name ="btnClientSummary" Content="Sprawdź" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" IsDefault="True"  Margin="3,0,3,0" Click="Client_btnSummary_Click"/>
+                        </Grid>
+
+
+                        <TextBox Name="txtClientSummary" Text="{Binding Path=Description}" Grid.Column="0" Grid.Row="4" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="10,5,3,3"/>
+
+                        <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Button Name="btnClientOk" Content="Dodaj nową osobę" Padding="20,3" Margin="3" IsDefault="True" Click="Client_btnOkay_Click"/>
+                            <Button Name="btnClientCancel" Content="Anuluj" Padding="20,3" Margin="3" IsCancel="True" Click="Client_btnCancel_Click"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+
+            <!--TEMPLATE-->
+            <TabItem Header="Template" Tag="Podstawowa funkcjonalność.">
+                <Grid>
+                    <Grid HorizontalAlignment="Left" Height="254" Margin="10,0,0,0" VerticalAlignment="Center" Width="130">
+                        <Button Name="AddButton" Content="Dodaj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="AddClick"/>
+                        <Button Name="EditButton" Content="Edytuj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="EditClick"/>
+                        <Button Name="DeleteButton" Content="Usuń" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="DeleteClick"/>
+                        <Button Name="ViewButton" Content="Podejrzyj" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="40" Width="110" Click="ViewClick"/>
+                    </Grid>
+
+
+                    <Grid HorizontalAlignment="Left" Height="487" Margin="161,0,0,0" VerticalAlignment="Center" Width="319">
+                        <ListBox SelectionMode="Single" Name="listOfItems" GotFocus="ClientGotFocus" Margin="0,10,0,10" DisplayMemberPath="NameAndPrice"/>
+                    </Grid>
+
+
+                    <Grid DataContext="{Binding ElementName=listOfItems, Path=SelectedItem}" HorizontalAlignment="Left" Height="487" Margin="526,0,0,0" VerticalAlignment="Center" Width="586">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Name="NameSurname" Grid.Column="0" Grid.Row="0" Content="Imię i Nazwisko" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="txtNameSurname" Text="{Binding Path=NameSurname}" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Margin="3" TextChanged="txtNameSurname_TextChanged"/>
+                            <Button Name="btnNameSurname" Grid.Column="2" Grid.Row="0" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Email" Grid.Column="0" Grid.Row="1" Content="Email" VerticalAlignment="Center" Margin="3"/>
+                            <TextBox Name="txtEmail" Text="{Binding Path=Email}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="3"/>
+                            <Button Name="btnEmail" Grid.Column="2" Grid.Row="1" Content="..." VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+                            <Label Name="Date" Content="Data urodzenia" Grid.Column="0" Grid.Row="2"  VerticalAlignment="Center" Margin="3"/>
+                            <DatePicker Name="datepick" SelectedDate="{Binding Path=dateOfBirth}" Grid.Column="1" Grid.Row="2" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+
+                            <Label Name="Payment" Content="Wpłata" Grid.Column="0" Grid.Row="3"  VerticalAlignment="Center" Margin="3"/>
+                            <ScrollBar Name="scrollbarPayment" Value="{Binding Path=Payment}" Grid.Column="1" Grid.Row="3" Orientation="Horizontal" ValueChanged="scrollbarPayment_ValueChanged"/>
+                            <TextBox Name="txtPayment" Grid.Column="2" Grid.Row="3"  VerticalAlignment="Center" Padding="10,3" Margin="3"/>
+
+
+                            <Label Name="Province" Content="Województwo"  Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                            <ComboBox Name="cmbProvince" SelectedIndex="{Binding Path=Province}" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="2,7,4,6.667">
+                                <ComboBoxItem Name="cmb1" Content="Podlasie"/>
+                                <ComboBoxItem Name="cmb2" Content="Łódzkie"/>
+                                <ComboBoxItem Name="cmb3" Content="Mazowieckie"/>
+                                <ComboBoxItem Name="cmb4" Content="Małoposlkie"/>
+                                <ComboBoxItem Name="cmb5" Content="Wielkopolskie"/>
+                                <ComboBoxItem Name="cmb6" Content="Pomorskie"/>
+                            </ComboBox>
+
+
+                            <GroupBox Name="Format1" Header="Adres" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" Margin="3">
+                                <Grid VerticalAlignment="Center">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Name="Street" Content="Miasto" Grid.Column="0" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+                                    <Label Name="City" Content="Ulica" Grid.Row="1" Grid.Column="0" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+                                    <Label Name="Code" Content="Kod" Grid.Column="2" Grid.Row="2" Margin="3,0,4,0" VerticalAlignment="Center" Height="26"/>
+                                    <Label Name="Phone" Content="Telefon" Grid.Column="4" Grid.Row="2" Margin="3,0,3,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="26"/>
+
+                                    <TextBox Name="txtCity" Text="{Binding Path=City}" Grid.Column="2" Margin="3,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="10"/>
+                                    <TextBox Name="txtStreet" Text="{Binding Path=Street}" Grid.Column="2" Grid.Row="1" Margin="3,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="10"/>
+                                    <TextBox Name="txtCode" Text="{Binding Path=Code}" Grid.Column="3" Grid.Row="2" Margin="0,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="1"/>
+                                    <TextBox Name="txtPhone"  Text="{Binding Path=Phone}" Grid.Column="5" Grid.Row="2" Margin="0,0,4,0" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="2"/>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+
+
+
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <GroupBox Name="Gender" Header="Płeć" Grid.Column="0">
+                                <StackPanel VerticalAlignment="Center">
+                                    <RadioButton Name="male" Content="Mężczyzna" Margin="3"/>
+                                    <RadioButton Name="female" Content="Kobieta" Margin="3"/>
+                                    <RadioButton Name="unknown" Content="Nieznane" Margin="3"/>
+                                </StackPanel>
+                            </GroupBox>
+
+                            <GroupBox Name="Adres" Header="Rodzaj wpłaty" Grid.Column="1">
+                                <StackPanel VerticalAlignment="Top">
+                                    <CheckBox x:Name="Oplata" Content="Opłata ...?"  Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                                    <CheckBox x:Name="Charytatywne" Content="Na cele charytatywne" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                                    <CheckBox x:Name="Napiwek" Content="Napiwek" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Margin="3,0,3,0"/>
+                                </StackPanel>
+                            </GroupBox>
+
+                            <GroupBox Name="Termin_Realizacji" Header="Termin Realizacji" Grid.Column="2">
+                                <StackPanel VerticalAlignment="Top">
+                                    <RadioButton Name="Standard" Content="Standard" Margin="3"/>
+                                    <RadioButton Name="Ekspres" Content="Ekspres" Margin="3"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </Grid>
+
+
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Dodatkowe uwagi:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"  Height="28" Margin="3,0,3,0"/>
+                            <Button Name ="btnSummary" Content="Sprawdź" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" IsDefault="True"  Margin="3,0,3,0" Click="Client_btnSummary_Click"/>
+                        </Grid>
+
+
+                        <TextBox Name="txtSummary" Text="{Binding Path=Description}" Grid.Column="0" Grid.Row="4" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="10,5,3,3"/>
+
+
+
+                        <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Button Name="btnOk" Content="Dodaj nową osobę" Padding="20,3" Margin="3" IsDefault="True" Click="Client_btnOkay_Click"/>
+                            <Button Name="btnCancel" Content="Anuluj" Padding="20,3" Margin="3" IsCancel="True" Click="Client_btnCancel_Click"/>
+                        </StackPanel>
+                    </Grid>
+
+
+                    <Grid DataContext="{Binding ElementName=listOfItems, Path=SelectedItem}" HorizontalAlignment="Left" Height="487" Margin="1140,0,0,0" VerticalAlignment="Center" Width="350">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" SharedSizeGroup="etykiety2"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Margin="4" Grid.Row="0">Urodzony</Label>
+                        <Label Margin="4" Grid.Row="1">Płeć</Label>
+                        <Label Margin="4" Grid.Row="2">Rodzaj</Label>
+                        <Label Margin="4" Grid.Row="3">Realizacja</Label>
+                        <TextBox Margin="4" Grid.Row="0" Grid.Column="1" Text="{Binding Path=DateOfBirth}"/>
+                        <TextBox Margin="4" Grid.Row="1" Grid.Column="1" Text="{Binding Path=Gender}"/>
+                        <TextBox Margin="4" Grid.Row="2" Grid.Column="1" Text="{Binding Path=Type}"/>
+                        <TextBox Margin="4" Grid.Row="3" Grid.Column="1" Text="{Binding Path=Term}"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
